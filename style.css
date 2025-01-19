@@ -1,9 +1,32 @@
 header{
     display: flex;
     justify-content: space-between;
+
+    align-items: center;
 }
 nav ul{
     display: flex;
     text-decoration: none;
-    list-style: none;
+  
+    
+}
+nav a{
+    gap: 10px;
+}
+
+
+
+.imagepart{
+position: relative;
+height: 400px;
+width: 400px;
+background: url(/images/Circle\ design.svg) no-repeat center;
+background-size: contain;
+
+}
+.imagepsrt img{
+    position: relative;
+      width: 100%;
+      height: auto;
+      z-index: 1; 
 }
