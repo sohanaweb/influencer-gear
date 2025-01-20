@@ -1,32 +1,143 @@
-header{
-    display: flex;
+
+
+ 
+
+.navbar{ display: flex;
     justify-content: space-between;
-
-    align-items: center;
+    /* align-items: center; */
+   
+    margin: 0 auto;
 }
-nav ul{
-    display: flex;
+
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
     text-decoration: none;
-  
-    
-}
-nav a{
-    gap: 10px;
 }
 
+.nav-links{display: flex;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 500;
+}
 
 
+
+/* navber end design */
+
+.hero{
+    display: flex;
+    /* justify-content: space-between; */
+    max-width: 100%;
+
+}
+.textpart{
+    font-weight: 500;
+}
+.btn{
+    background-color: rgba(224, 44, 109, 1);
+    color: white;
+    border-radius:40px ;
+    width: 196px;
+    height: 44px;
+    cursor: pointer;
+}
 .imagepart{
 position: relative;
-height: 400px;
-width: 400px;
+max-height: 400px;
+max-width: 400px;
 background: url(/images/Circle\ design.svg) no-repeat center;
 background-size: contain;
+margin-right: 40px;
 
 }
-.imagepsrt img{
+.imagepart img{
     position: relative;
       width: 100%;
       height: auto;
       z-index: 1; 
 }
+/* cards secton  */
+
+
+.brandlogo{
+    
+   
+    display: flex;
+    flex-wrap: wrap;
+justify-content: space-evenly;
+
+}
+/* .cardcontain{
+    padding: 7px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+    justify-content: center;
+align-items: center;
+} */
+
+
+
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+
+.card{
+    padding: 7px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+    /* justify-content: center; */
+    /* gap: 30px; */
+    justify-content: space-evenly;
+}
+
+
+
+
+@media screen and (max-width:476px){
+.brandlogo{
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.cards{
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #btn2{
+position: relative;
+
+right: -500px;
+padding: 10px 20px;
+
+color: rgba(224, 44, 109, 0.87);
+font-weight: 400;
+font-size: larger;
+border: none;
+border-radius: 5px;
+background-color: transparent;
+cursor: pointer;
+   
+  } */
+ 
